@@ -1,0 +1,48 @@
+{
+  "slot": 312345678,
+  "blockTime": 1794200000,
+  "meta": {
+    "err": null,
+    "fee": 5000,
+    "computeUnitsConsumed": 18450,
+    "preBalances": [2000000000, 1000000000, 2039280, 1461600, 1, 1, 1],
+    "postBalances": [1499995000, 1500000000, 2039280, 1461600, 1, 1, 1],
+    "preTokenBalances": [
+      {"accountIndex": 2, "mint": "USDCMintDemo111111111111111111111Dm5Uc", "owner": "AliceDemoWallet1111111111111111111Ax7Qm",
+       "uiTokenAmount": {"amount": "25000000", "decimals": 6, "uiAmountString": "25"}},
+      {"accountIndex": 3, "mint": "USDCMintDemo111111111111111111111Dm5Uc", "owner": "BobDemoWallet111111111111111111111Kp3Zt",
+       "uiTokenAmount": {"amount": "0", "decimals": 6, "uiAmountString": "0"}}
+    ],
+    "postTokenBalances": [
+      {"accountIndex": 2, "mint": "USDCMintDemo111111111111111111111Dm5Uc", "owner": "AliceDemoWallet1111111111111111111Ax7Qm",
+       "uiTokenAmount": {"amount": "15000000", "decimals": 6, "uiAmountString": "15"}},
+      {"accountIndex": 3, "mint": "USDCMintDemo111111111111111111111Dm5Uc", "owner": "BobDemoWallet111111111111111111111Kp3Zt",
+       "uiTokenAmount": {"amount": "10000000", "decimals": 6, "uiAmountString": "10"}}
+    ],
+    "innerInstructions": [],
+    "logMessages": ["Program 11111111111111111111111111111111 invoke [1]", "Program 11111111111111111111111111111111 success"]
+  },
+  "transaction": {
+    "signatures": ["DemoSignature1111111111111111111111111111111111111111111111111111111111111111111111111"],
+    "message": {
+      "accountKeys": [
+        {"pubkey": "AliceDemoWallet1111111111111111111Ax7Qm", "signer": true, "writable": true},
+        {"pubkey": "BobDemoWallet111111111111111111111Kp3Zt", "signer": false, "writable": true},
+        {"pubkey": "AliceTokenAcct11111111111111111111Rv9Lw", "signer": false, "writable": true},
+        {"pubkey": "BobTokenAcct1111111111111111111111Hn4Ey", "signer": false, "writable": true},
+        {"pubkey": "11111111111111111111111111111111", "signer": false, "writable": false},
+        {"pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA", "signer": false, "writable": false},
+        {"pubkey": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr", "signer": false, "writable": false}
+      ],
+      "instructions": [
+        {"programId": "11111111111111111111111111111111", "program": "system",
+         "parsed": {"type": "transfer", "info": {"source": "AliceDemoWallet1111111111111111111Ax7Qm", "destination": "BobDemoWallet111111111111111111111Kp3Zt", "lamports": 500000000}}},
+        {"programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA", "program": "spl-token",
+         "parsed": {"type": "transferChecked", "info": {"source": "AliceTokenAcct11111111111111111111Rv9Lw", "destination": "BobTokenAcct1111111111111111111111Hn4Ey",
+          "authority": "AliceDemoWallet1111111111111111111Ax7Qm", "mint": "USDCMintDemo111111111111111111111Dm5Uc",
+          "tokenAmount": {"amount": "10000000", "decimals": 6, "uiAmountString": "10"}}}},
+        {"programId": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr", "program": "spl-memo", "parsed": "Rent split for November"}
+      ]
+    }
+  }
+}
